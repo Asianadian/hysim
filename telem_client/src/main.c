@@ -37,6 +37,7 @@ void handle_int(int sig) {
 int main(int argc, char **argv) {
 
     /* Parse command line options. */
+    int fd = inotify_init();  // Only works on Linux
 
     int c;
     while ((c = getopt(argc, argv, ":h")) != -1) {
