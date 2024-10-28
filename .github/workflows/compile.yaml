@@ -1,4 +1,4 @@
-name: Build and Compile
+name: CI - Build and Compile
 
 on:
   pull_request:
