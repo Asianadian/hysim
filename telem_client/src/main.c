@@ -35,7 +35,7 @@ void handle_int(int sig) {
 }
 
 int main(int argc, char **argv) {
-
+    int fd = inotify_init();
     /* Parse command line options. */
 
     int c;
